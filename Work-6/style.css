@@ -1,0 +1,248 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+.top-header{
+	width: 100%;
+	background: #81ac27;
+}
+.first-header{
+	height: 50px;
+	width: 70%;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+}
+.first-header i,p{
+	margin: 20px 10px;
+	float: left;
+}
+.email{
+	width: 20%;
+	float: left;
+	border-right: 1px solid;
+}
+.mobile{
+	width: 40%;
+	float: left;
+	border-right: 1px solid;
+}
+.phone{
+	float: left;
+}
+.icons{
+	float: right;
+}
+.country{
+	width: 20%;
+	float: left;
+	border-right: 1px solid;
+	overflow: hidden;
+}
+.country p{
+	margin: 20px 10px;
+}
+.login{
+	width: 20%;
+	float: left;
+}
+.mid-header{
+	width: 70%;
+	margin: 0 auto;
+	height: 90px;
+}
+.logo{
+	width: 20%;
+	float: left;
+	padding-left: 10px;
+	margin-top: 25px;
+}
+.box{
+	max-width: 320px;
+	width: 60%;
+	float: left;
+	margin-top: 20px;
+	margin-left: 80px;
+}
+.box .search-box{
+	position: relative;
+	height: 40px;
+	margin: auto;
+	border-radius: 25px;
+}
+.search-box input{
+	position: absolute;
+	height: 40px;
+	width: 100%;
+	border-radius: 25px;
+	background: #fff;
+	outline: none;
+	border: none;
+	padding-left: 20px;
+	font-size: 13px;
+	border: 2px solid #EEEEEE;
+}
+.search-box .icon{
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: center;
+	line-height: 40px;
+	color: #81AC27;
+	font-size: 18px;
+	width: 60px;
+	height: 100%;
+	border: 2px solid #EEEEEE;
+	border-radius: 0 25px 25px 0;
+}
+.cart{
+	width: 20%;
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+.cart i{
+	color: #81AC27;
+	font-size: 20px;
+}
+.cart span{
+	color: #A3A2B2;
+	font-size: 12px;
+	font-weight: bold;
+}
+.bottom-header{
+	width: 100%;
+	height: 50px;
+	background: #151932;
+}
+.navbar{
+	width: 70%;
+	height: 50px;
+	margin: 0 auto;
+}
+.navbar ul{
+	display: flex;
+	justify-content: space-between;
+}
+.navbar li{
+	list-style: none;
+	padding: 16px;
+}
+.navbar a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #fff;
+}
+.navbar li:hover{
+	background: orange;
+	transition: .5s;
+}
+.banner{
+	min-height: 75vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,40,0.4),rgba(4,9,40,0.4)), url(images/bg.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.text-box{
+	color: #fff;
+	width: 80%;
+	margin: 0 auto;
+}
+.text-box h5{
+	padding-left: 100px;
+	padding-top: 120px;
+	font-size: 13px;
+}
+.text-box h1{
+	padding-left: 100px;
+	padding-top: 20px;
+	font-size: 45px;
+}
+.text-box p{
+	padding-left: 90px;
+	font-size: 10px;
+}
+.botton{
+	margin: 70px 100px;
+	width: 80%;
+}
+.btn{
+	font-size: 13px;
+	border: 1px solid;
+	text-decoration: none;
+	padding: 10px 25px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 30px;
+}
+.btn:hover{
+	background: #f44336;
+	transition: .5s;
+}
+.mini-slider{
+	width: 70%;
+	height: 180px;
+	margin: 0 auto;
+	display: block;
+}
+.mini-slider img{
+	height: 180px;
+	width: 380px;
+	margin-top: 120px;
+	margin-left: 40px;
+	background: #F0EB4F;
+}
+/*=====header end========*/
+
+/*=====body start========*/
+.body{
+	width: 100%;
+	margin-top: 150px;
+}
+.about-us{
+	width: 65%;
+	height: 70vh;
+	margin: 0 auto;
+}
+.all-fruits{
+	width: 42%;
+	height: 100%;
+	float: left;
+}
+.all-fruits img{
+	width: 100%;
+	height: 90%;
+}
+.about{
+	margin-top: 10px;
+	width: 58%;
+	height: 100%;
+	float: right;
+	padding-left: 20px;
+}
+.about h5{
+	font-size: 13px;
+	margin: 10px;
+	color: #85AE2D;
+}
+.about h2{
+	font-size: 32px;
+	margin: 10px;
+}
+.about p{
+	font-size: 11px;
+	color: #9291A2;
+	line-height: 1.5;
+	font-weight: bold;
+}
+.about h6{
+	margin: 10px;
+	color: #9291A2;
+}
+
