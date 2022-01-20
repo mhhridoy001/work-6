@@ -248,7 +248,7 @@
 }
 .trending-product{
 	width: 65%;
-	height: 110vh;
+	height: 120vh;
 	margin: 0 auto;
 }
 .trend-text{
@@ -314,12 +314,12 @@
 }
 .card-button{
 	width: 100%;
-	height: 60px;
+	height: 80px;
 	text-align: center;
 }
 .card-button .btn{
 	background: #81AB27;
-	margin: 15px;
+	margin: 30px;
 	font-size: 13px;
 	border: 1px solid;
 	text-decoration: none;
@@ -332,5 +332,141 @@
 	background: #f44336;
 	transition: .5s;
 }
-
-
+.bazar-banner{
+	background-image: url(images/baz-banner.jpg);
+	width: 100%;
+	height: 330px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bazar-text{
+	width: 65%;
+	height: 330px;
+	margin: 0 auto;
+	padding-top: 80px;
+}
+.bazar-text h5{
+	color: #81AB27;
+	padding: 5px 0;
+	font-size: 13px;
+}
+.bazar-text h2{
+	font-size: 30px;
+	padding: 10px 0;
+}
+.bazar-text h6{
+	font-size: 12px;
+	padding: 5px 0;
+	line-height: 1.8;
+	color: #9291A2;
+}
+.bazar-btn{
+	width: 100%;
+	margin-top: 20px;
+}
+.btn-btn{
+	background: #81AB27;
+	font-size: 13px;
+	border: 1px solid;
+	text-decoration: none;
+	padding: 10px 25px;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 30px;
+}
+.btn-btn:hover{
+	background: #f44336;
+	transition: .5s;
+}
+.most_view-product{
+	width: 65%;
+	height: 110vh;
+	margin: 0 auto;
+}
+.banner-fruits{
+	height: 220px;
+	width: 65%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.first-ban{
+	width: 48%;
+	height: 220px;
+	background-image: linear-gradient(rgba(4,9,40,0.7),rgba(4,9,40,0.6)), url(images/all-fruit.png);
+	background-size: cover;
+	background-position: center;
+	float: left;
+}
+.second-ban{
+	width: 48%;
+	height: 220px;
+	background-image: linear-gradient(rgba(4,9,40,0.7),rgba(4,9,40,0.6)), url(images/all-fruit2.png);
+	background-size: cover;
+	background-position: center;
+	float: right;
+}
+.Featured-Products{
+	width: 65%;
+	margin: 0 auto;
+}
+.featured-top{
+	width: 100%;
+	height: 10vh;
+}
+.featured-top-left{
+	width: 40%;
+	height: 20vh;
+	float: left;
+}
+.featured-top-left h2{
+	margin-top: 15px;
+	font-size: 22px;
+}
+.featured-top-right{
+	width: 60%;
+	height: 10vh;
+	float: right;
+}
+.featured-top-right ul{
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+.featured-top-right ul li{
+	list-style: none;
+	padding: 20px 15px;
+}
+.featured-top-right ul li a{
+	text-decoration: none;
+	color: #9291A2;
+	font-size: 13px;
+	font-weight: bold;
+}
+.featured-top-right ul li a:hover{
+	color: #81AB27;
+}
+.featured-bottom{
+	width: 100%;
+	height: 75vh;
+	background: red;
+}
+.featured-bottom-left{
+	width: 50%;
+	height: 75vh;
+	background-image: url(images/Vegetables.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.featured-text{
+	float: left;
+	margin-top: -30px;
+}
+.featured-text h5{
+	font-size: 12px;
+	color: #9291A2;
+	padding-top: 5px ;
+}
+.featured-text h3{
+	font-size: 17px;
+	padding-top: 5px;
+}
