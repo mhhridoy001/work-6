@@ -9,6 +9,16 @@
 	<link rel="stylesheet" href="reponsive.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 
+	<!-- jQuery library -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> 
+
+
 	<style>
 		header{
 			background: linear-gradient(rgba(4,9,40,0.5),rgba(4,9,40,0.5)), url(images/baz-banner.jpg);
@@ -25,7 +35,7 @@
 			padding-bottom: 10px;
 		}
 		.account{
-			height: 60vh;
+			height: 62vh;
 			width: 70%;
 			margin: 40px auto;
 			}
@@ -168,8 +178,8 @@
 	</header>
 
 	<main>
-		
-		<div class="account">
+		<form action="#">
+			<div class="account">
 			<div class="login-ac">
 				<div class="log-box">
 
@@ -177,13 +187,19 @@
 					<h5>Log if you are a returning customar</h5>
 
 					<div class="form-group">
-				    <input type="email" id="email" autocomplete="off" placeholder="E-mail Adress">
-				    <input type="password" id="pass" autocomplete="off" placeholder="Password">
+				    <input type="email" id="email" autocomplete="off" placeholder="E-mail Adress" 
+				    required>
+				    <h6 id="uesrcheck"></h6>
+
+				    <input type="password" id="password" autocomplete="off" placeholder="Password" 
+				    required>
+				    <h6 id="passcheck"></h6>
+
 				    <div class="check-box">
 				    	<input type="checkbox"><label for="">Remember me</label>
 				    	<a href="#">Forget Password?</a>
 				    </div>
-				    <input type="submit" value="Login" style="background: #81AC27; border: none; font-size: 15px; font-weight: bold; color: #fff;">
+				    <input type="submit" id="btn" value="Login" style="background: #81AC27; border: none; font-size: 15px; font-weight: bold; color: #fff;cursor: pointer;">
 					</div>
 
 					<div class="line">
@@ -232,6 +248,7 @@
 			</div>
 
 		</div>
+	</form>
 
 	</main>
 
@@ -306,5 +323,114 @@
 
 		</div>
 	</footer>
+
+
+
+	<script type="text/javaScript">
+		
+		$(document).ready(function(){
+
+			$('#uesrcheck').hide();
+			$('#passcheck').hide();
+
+			var user_err = true;
+			var pass_err = true;
+
+			$('#email').keyup(function(){
+				email_check();
+			});
+
+			function email_check(){
+				var email_val = $('#email').val();
+
+				if (email_val.length == '') {
+
+					$('#uesrcheck').show();
+					$('#uesrcheck').html("**Please fill the Email");
+					$('#uesrcheck').focus();
+					$('#uesrcheck').css("color","red");
+
+					return user_err= false;
+					
+				}
+				else{
+					$('#uesrcheck').hide();
+				}
+
+				if ((email_val.length <10) || (email_val.length >20)){
+
+					$('#uesrcheck').show();
+					$('#uesrcheck').html("** Email length must be between 10 & 20");
+					$('#uesrcheck').focus();
+					$('#uesrcheck').css("color","red");
+
+					return user_err= false;
+
+				}
+				else{
+					$('#uesrcheck').hide();
+				}
+			};
+
+			//password
+
+			$('#password').keyup(function(){
+				password_check();
+			});
+
+			function password_check(){
+				var pass_val = $('#password').val();
+
+				if (pass_val.length == '') {
+
+					$('#passcheck').show();
+					$('#passcheck').html("**Please fill the password");
+					$('#passcheck').focus();
+					$('#passcheck').css("color","red");
+
+					return pass_err= false;
+					
+				}
+				else{
+					$('#passcheck').hide();
+				}
+
+				if ((pass_val.length <4) || (pass_val.length >8)){
+
+					$('#passcheck').show();
+					$('#passcheck').html("** Password length must be between 4 & 8");
+					$('#passcheck').focus();
+					$('#passcheck').css("color","red");
+
+					return pass_err= false;
+
+				}
+				else{
+					$('#passcheck').hide();
+				}
+			};
+
+
+
+			//submit
+			$('#btn').click(function(){
+			 user_err = true;
+			 pass_err = true;
+
+			email_check();
+			password_check();	
+			
+			if ((user_err == true) && (pass_err == true)){
+				return true;
+			}
+			else{
+				return false;
+			}		
+
+			});
+
+		});
+
+	</script>
 </body>
 </html>
