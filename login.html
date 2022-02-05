@@ -11,7 +11,7 @@
 
 	<style>
 		header{
-			background: linear-gradient(rgba(4,9,40,0.6),rgba(4,9,40,0.6)), url(images/baz-banner.jpg);
+			background: linear-gradient(rgba(4,9,40,0.5),rgba(4,9,40,0.5)), url(images/baz-banner.jpg);
 			height: 42vh;
 			width: 100%;
 			background-size: cover;
@@ -24,6 +24,99 @@
 		.heading h2{
 			padding-bottom: 10px;
 		}
+		.account{
+			height: 60vh;
+			width: 70%;
+			margin: 40px auto;
+			}
+		.account h2{
+			font-size: 18px;
+			letter-spacing: .5px;
+		}
+		.account h5{
+			font-size: 11px;
+			color: #9291A2;
+			padding: 10px 0;
+		}
+
+		.login-ac{
+			height: 100%;
+			width: 48%;
+			background: #FFFFFF;
+			box-shadow: 1px 0.5px 5px 0.5px;
+			float: left;
+		}
+		.log-box,.sign-box{
+			margin: 18px;
+		}
+		.form-group input{
+			margin-top: 10px;
+			width: 100%;
+			padding: 10px;
+			font-size: 13px;
+			border-radius: 5px;
+			outline: none;
+			border: 2px solid #9291A2;
+		}
+		.check-box input{
+			float: left;
+			width: 20px;
+			margin-top: 12px;
+		}
+		.check-box label{
+			float: left;
+			padding: 11px 5px;
+			font-size: 13px;
+			font-weight: bold;
+		}
+		.check-box a{
+			float: right;
+			text-decoration: none;
+			font-size: 12px;
+			font-weight: bold;
+			margin-top: 12px;
+			color: red;
+		}
+		.line{
+			border-bottom: 2px solid #9291A2;
+		}
+		.line h4{
+			text-align: center;
+			margin: 5px 0;
+			font-size: 13px;
+		}
+		.bottons{
+			width: 100%;
+			margin-top: 10px;
+		}
+		.bottons input{
+			width: 30%;
+			height: 35px;
+			margin: 0 5px;
+			border: none;
+			border-radius: 4px;
+			color: #fff;
+			cursor: pointer;
+		}
+		.log-bottom{
+			align-items: center;
+			display: flex;
+			justify-content: center;		
+		}
+		.log-bottom a{
+			padding-left: 5px;
+			text-decoration: none;
+			font-size: 12px;
+			color: #000;
+		}
+		.signup{
+			float: right;
+			height: 100%;
+			width: 48%;
+			background: #FFFFFF;
+			box-shadow: 1px 0.5px 5px 0.5px;
+		}
+
 
 	</style>
 </head>
@@ -72,7 +165,74 @@
 			<h2>Account Page</h2>
 			<h5>Home/Account</h5>
 		</div>
-
 	</header>
+
+	<main>
+		
+		<div class="account">
+			<div class="login-ac">
+				<div class="log-box">
+
+					<h2>Login</h2>
+					<h5>Log if you are a returning customar</h5>
+
+					<div class="form-group">
+				    <input type="email" id="email" autocomplete="off" placeholder="E-mail Adress">
+				    <input type="password" id="pass" autocomplete="off" placeholder="Password">
+				    <div class="check-box">
+				    	<input type="checkbox"><label for="">Remember me</label>
+				    	<a href="#">Forget Password?</a>
+				    </div>
+				    <input type="submit" value="Login" style="background: #81AC27; border: none; font-size: 15px; font-weight: bold; color: #fff;">
+					</div>
+
+					<div class="line">
+						<h4>OR</h4>
+					</div>
+
+					<div class="bottons">
+						<input type="submit" value="Facebook" style="background: #3B5999;">
+						<input type="submit" value="Google" style="background: #D85040;">
+						<input type="submit" value="Twitter" style="background: #007AFF;">
+					</div>
+
+					<div class="log-bottom">
+						<h5>Don't Hava an Account ?</h5>
+						<a href="#">Sign up now</a>
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class="signup">
+
+				<div class="sign-box">
+				<h2>Create an Account</h2>
+				<h5>Register if you are a returning customar</h5>
+
+				<div class="form-group">
+
+					<input type="text" id="username" autocomplete="off" placeholder="Username">
+				    <input type="email" id="email" autocomplete="off" placeholder="E-mail Adress">
+				    <input type="password" id="pass" autocomplete="off" placeholder="Password">
+				    <input type="password" id="con_pass" autocomplete="off" placeholder="Confirm Password">
+
+				    <input type="submit" value="Login" style="background: #81AC27; border: none; font-size: 15px; font-weight: bold; color: #fff;">
+
+				    <div class="check-box">
+				    	<input type="checkbox"><label for="">I have read and agree to the terms & conditions</label>
+				    </div>
+
+				</div>
+
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</main>
 </body>
 </html>
