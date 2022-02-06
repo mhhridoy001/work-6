@@ -72,7 +72,7 @@
 		}
 		.your_order{
 			width: 29%;
-			height: 70%;
+			height: 80%;
 			border: 1px solid #9291A2;
 			float: right;
 		}
@@ -84,6 +84,51 @@
 			text-align: center;
 			padding: 10px 0;
 			font-family: 'Rosarivo', serif;
+		}
+		.subtotal h5{
+			padding: 10px 0;
+			color: #9291A2;
+			border-bottom: 1px solid #9291A2;
+			font-size: 11px;
+		}
+		.subtotal span{
+			float: right;
+		}
+		.shipping h5{
+			padding: 10px 0;
+			color: #9291A2;
+			font-size: 11px;
+		}
+		.shipping span{
+			float: right;
+		}
+		.input{
+			margin-top: 10px;
+		}
+		.input input{
+			width: 10%;
+			float: left;
+			padding: 5px;
+			margin-bottom: 10px;
+		}
+		.input span{
+			margin-bottom: 9px;
+			width: 90%;
+			float: right;
+			font-size: 12px;
+			font-weight: bold;
+			color: #9291A2;
+		}
+		.button input{
+			margin-top: 15px;
+			width: 100%;
+			padding: 7px;
+			font-size: 12px;
+			font-weight: bold;
+			color: #7AA93C;
+			outline: none;
+			border: 2px solid #7AA93C;
+			background: #fff;
 		}
 	</style>
 </head>
@@ -178,10 +223,32 @@
 			</div>
 
 			<div class="your_order">
+
 				<div class="order_box">
 					<h4>Your Order</h4>
 					<hr>
-				</div>			
+					<div class="subtotal">
+						<h5>Subtotal: <span>$220</span></h5>
+					</div>
+					<div class="shipping">
+						<h5>Shipping:</h5>
+						<h5>Free Shipping: <span>$220</span></h5>
+						<h5>Standard: <span>$220</span></h5>
+						<h5>Exprees: <span>$220</span></h5>
+					<h5 style="border-top: 1px solid #9291A2;color: #000;">Total: <span>$220</span></h5>
+					</div>
+
+					<div class="input">
+						<input type="radio" name="same"> <span>Direct bank transfer</span>
+						<input type="radio" name="same"> <span>Check payment</span>
+						<input type="radio" name="same"> <span>Cash on delivery</span>
+					</div>
+					<div class="button">
+						<input type="submit" value="Proceed to Checkout">
+					</div>
+
+				</div>
+
 			</div>
 		</div>
 		</form>
