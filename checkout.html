@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>V FOOD</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="reponsive.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"> 
+
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Rosarivo&display=swap');
+		header{
+			background: linear-gradient(rgba(4,9,40,0.5),rgba(4,9,40,0.5)), url(images/baz-banner.jpg);
+			height: 40vh;
+			width: 100%;
+			background-size: cover;
+			}
+		.heading{
+			text-align: center;
+			margin: 5vh; 
+			color: #fff;
+		}
+		.heading h2{
+			padding-bottom: 10px;
+		}
+		.checkout{
+			width: 65%;
+			height: 80vh;
+			margin: 45px auto;
+			background: #FFFFFF;
+		}
+		.checkout-bill{
+			width: 68%;
+			height: 100%;
+			float: left;
+
+		}
+		.checkout-bill h3{
+			padding-bottom: 3px;
+			font-family: 'Rosarivo', serif;
+			border-bottom: 2px solid #9291A2;
+		}
+		.con-box input{
+			width: 100%;
+			margin-top: 20px;
+			font-size: 12px;
+			font-weight: bold;
+			padding: 7px 8px;
+			outline: 0;
+			border: 1px solid #9291A2;
+		}
+		.con_box_left{
+			width: 48%; 
+			float: left;
+		}
+		.con_box_right{
+			width: 48%;
+			float: right;
+			}
+
+		.bill_form input{
+			width: 100%;
+			padding: 7px 8px;
+			font-size: 12px;
+			font-weight: bold;
+			outline: 0;
+			border: 1px solid #9291A2;
+			margin-top: 20px;
+		}
+		.your_order{
+			width: 29%;
+			height: 70%;
+			border: 1px solid #9291A2;
+			float: right;
+		}
+		.order_box{
+			width: 85%;
+			margin: 0 auto;
+		}
+		.order_box h4{
+			text-align: center;
+			padding: 10px 0;
+			font-family: 'Rosarivo', serif;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<!-- mid header start -->
+		<section class="mid-header">
+		<div class="logo">
+			<h1><span style="color: #81ac27;">V</span> FOOD</h1>
+		</div>
+		<div class="box">
+			<div class="search-box">
+				<input type="text" placeholder="Type here.....">
+				<label for="" class="icon">
+				<i class="fas fa-search"></i>
+				</label>
+			</div>
+		</div>	
+		<div class="cart">
+			<i class="far fa-heart"></i>
+			<i class="fas fa-shopping-cart" style="padding-left: 10px;"></i>
+			<span>My Cart-$40.00</span>
+		</div>
+
+		</section>
+		<!-- mid header end -->
+
+		<!-- bottom header start -->
+		<section class="bottom-header">
+			<div class="navbar">
+				<ul>
+					<li style="background: #81AC27;"><a href="#">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Pages</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</section>
+		<!-- bottom header end -->
+
+		<div class="heading">
+			<h2>Checkout Page</h2>
+			<h5>Home/Checkout</h5>
+		</div>
+	</header>
+
+
+	<main>
+		<form action="#">
+		<div class="checkout">
+			<div class="checkout-bill">
+				<h3>Billing Details</h3>
+
+				<div class="con-box">
+					<div class="con_box_left">
+						<input type="text" placeholder="First Name *">
+					</div>
+
+					<div class="con_box_right">
+						<input type="text" placeholder="Last Name *">
+					</div>
+				</div>
+
+				<div class="bill_form">
+					<input type="text" placeholder="Company Name (Optional)">
+					<input type="text" placeholder="Country *">
+					<input type="text" placeholder="Appartment">
+				</div>
+				<div class="con-box">
+					<div class="con_box_left">
+						<input type="text" placeholder="Town / City">
+						<input type="text" placeholder="State / Country">
+
+					</div>
+
+					<div class="con_box_right">
+						<input type="text" placeholder="Postcode / ZIP">
+						<input type="text" placeholder="Phone">
+
+					</div>
+				</div>
+
+				<div class="bill_form">
+					<input type="email" placeholder="Email Address *">
+					<input type="text" placeholder="Notes about your order, e.g. special for delivery" style="padding-bottom: 50px;">
+				</div>
+
+			</div>
+
+			<div class="your_order">
+				<div class="order_box">
+					<h4>Your Order</h4>
+					<hr>
+				</div>			
+			</div>
+		</div>
+		</form>
+	</main>
+
+
+	<footer class="footer">
+
+		<div class="foBox">
+			<div class="foBox-left">
+				<div class="footer-text">
+					<h2>My Account</h2>
+					<ul>
+						<li><a href="#">My Account</a></li>
+						<li><a href="#">Order History</a></li>
+						<li><a href="#">WishList</a></li>
+						<li><a href="#">NewsLetter</a></li>
+						<li><a href="#">Internation History</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="foBox-mid">
+				<div class="footer-text">
+					<h2>Company Details</h2>
+					<ul>
+						<li><a href="#">My Account</a></li>
+						<li><a href="#">Order History</a></li>
+						<li><a href="#">WishList</a></li>
+						<li><a href="#">NewsLetter</a></li>
+						<li><a href="#">Internation History</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="foBox-middle">
+				<div class="footer-text">
+					<h2>Information</h2>
+					<ul>
+						<li><a href="#">My Account</a></li>
+						<li><a href="#">Order History</a></li>
+						<li><a href="#">WishList</a></li>
+						<li><a href="#">NewsLetter</a></li>
+						<li><a href="#">Internation History</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="foBox-right">
+				<div class="footer-text">
+					<h2>Quick Links</h2>
+					<ul>
+						<li><a href="#">My Account</a></li>
+						<li><a href="#">Order History</a></li>
+						<li><a href="#">WishList</a></li>
+						<li><a href="#">NewsLetter</a></li>
+						<li><a href="#">Internation History</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="footer-email">
+			<div class="footLogo">
+				<h2>V <span style="color: orange;">FOOD</span> </h2>
+			</div>
+			<div class="footEmail">
+				<input type="text" name="" placeholder="Your email address">
+			</div>
+			<div class="copyright">
+				<h5>copyright © Mehedi Hasan Hridoy</h5>
+			</div>
+
+		</div>
+	</footer>	
+</body>
+</html>
